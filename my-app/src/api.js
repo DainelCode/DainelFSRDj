@@ -2,9 +2,10 @@ import axios from "axios"
 import { ACCESS_TOKEN } from "./constants"
 
 const api = axios.create({
-    baseURL: "http://127.0.0.1:8000"
-    //baseURL: import.meta.env.API_URL
+    baseURL: "/choreo-apis/djreact/backend/rest-api-be2/v1"
 })
+// baseURL: "http://127.0.0.1:8000"
+//baseURL: import.meta.env.API_URL
 
 
 api.interceptors.request.use(
